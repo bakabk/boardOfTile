@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
+import {findDOMNode} from 'react-dom'
 import Counter from './Counter'
 import Rules from './Rules'
 import Cngratulations from './Cngratulations'
@@ -38,7 +38,7 @@ class App extends Component {
     componentDidMount(){
         this.init()
 
-        let app = ReactDOM.findDOMNode(this.refs.wrapper)
+        let app = findDOMNode(this.refs.wrapper)
 
         if(browser.name === 'ie') app.classList.add('ie')
     }
