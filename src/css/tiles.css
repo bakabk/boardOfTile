@@ -5,11 +5,17 @@
     height: 300px;
     box-sizing: border-box;
     display: flex;
+    display: -ms-flexbox;
     flex-direction: row;
+    -ms-flex-direction: row;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     justify-content: space-around;
+    -ms-justify-content: space-around;
     align-items: center;
+    -ms-align-items: center;
     align-content: space-around;
+    -ms-align-content: space-around;
 }
 
 .tile{
@@ -27,8 +33,10 @@
     width: 68px;
     height: 68px;
     display: flex;
+    display: -ms-flex;
     text-align: center;
-    align-items: center;
+    text-align: center;
+    -ms-align-items: center;
     background-color: black;
 }
 
@@ -48,10 +56,6 @@
 }
 
 .ie .wrapper__tile_block.is-open{
-    -webkit-backface-visibility: visible;
-    -moz-backface-visibility: visible;
-    -ms-backface-visibility: visible;
-    backface-visibility: visible;
     -webkit-transition: visibility 0s .25s;
     -moz-transition: visibility 0s .25s;
     -ms-transition: visibility 0s .25s;
